@@ -1,0 +1,14 @@
+.DS_Store
+
+# logs
+*.log
+
+# dotenv
+.env
+
+dist
+
+# dependencies
+node_modules
+
+tsconfig.tsbuildinfo

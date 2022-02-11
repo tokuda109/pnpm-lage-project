@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["dom", "esnext", "esnext.asynciterable"],
+    "declarationMap": false,
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "types": [
+      "@nuxt/http",
+      "@nuxt/types",
+      "@types/node"
+    ]
+  },
+  "includes": [
+    "./src/**/*.ts",
+    "./src/**/*.vue"
+  ],
+  "exclude": [
+    "node_modules",
+    ".nuxt"
+  ]
+}

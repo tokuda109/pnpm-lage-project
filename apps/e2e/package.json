@@ -1,0 +1,16 @@
+{
+  "name": "e2e",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pnpm serve ../../dist",
+    "open": "pnpm start-server-and-test 3000 'cypress open'",
+    "run": "pnpm start-server-and-test 3000 'cypress run'",
+    "lint": "eslint --config ./.eslintrc --ext .ts src"
+  },
+  "devDependencies": {
+    "cypress": "9.4.1",
+    "serve": "13.0.2",
+    "start-server-and-test": "1.14.0"
+  }
+}
